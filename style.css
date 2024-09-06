@@ -1,0 +1,161 @@
+/* Arquivo: css/style.css */
+
+/* Estilo para o banner principal */
+.banner {
+    background-image: url('../img/banner-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilo para a imagem sobreposta */
+.banner-overlay {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 150px;
+    height: auto;
+    z-index: 10;
+}
+
+/* Estilo para o título com a fonte Pixelify Sans */
+h1.pixelify-sans {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 400; /* Ajuste o peso conforme necessário */
+    margin-top: 80px; /* Ajuste conforme necessário para mover o título */
+    text-align: center; /* Centralizado horizontalmente */
+}
+
+/* Estilo para os títulos das seções com a fonte Pixelify Sans */
+h2.pixelify-sans {
+    font-family: 'Pixelify Sans', Arial, sans-serif;
+    font-weight: 400; /* Ajuste o peso conforme necessário */
+    margin-bottom: 20px; /* Ajuste conforme necessário */
+}
+
+/* Arquivo: css/style.css */
+
+/* Estilo do botão de alternância com animação */
+.devmode-on {
+    background-color: rgba(33, 37, 41, 0.8);
+    color: #f8f9fa;
+    border: 2px solid transparent; /* Borda transparente por padrão */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    overflow: hidden;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.devmode-on i {
+    font-size: 24px;
+    transition: opacity 0.3s ease;
+}
+
+/* Animação ao clicar no botão */
+.devmode-on.animate {
+    animation: moveIcon 0.5s ease-in-out;
+}
+
+@keyframes moveIcon {
+    0% {
+        transform: scale(1) translateX(0);
+    }
+    50% {
+        transform: scale(1.2) translateX(10px); /* Movimento para a direita */
+    }
+    100% {
+        transform: scale(1) translateX(0); /* Retorno ao estado original */
+    }
+}
+
+/* Efeito de borda de receptor de lâmpada */
+.devmode-on.clicked {
+    border-color: #f8f9fa; /* Cor da borda quando clicado */
+}
+
+/* Estado de tema escuro */
+.devmode-on.dark-mode i.fa-sun {
+    opacity: 0;
+}
+
+.devmode-on.dark-mode i.fa-moon {
+    opacity: 1;
+}
+
+/* Estado de tema claro */
+.devmode-on.light-mode i.fa-moon {
+    opacity: 0;
+}
+
+.devmode-on.light-mode i.fa-sun {
+    opacity: 1;
+}
+
+/* Estilo do body para temas claro e escuro */
+body {
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+    background: linear-gradient(180deg, #f8f9fa 0%, #212529 100%);
+}
+
+/* Tema Claro */
+body.light-mode {
+    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+    color: #212529;
+}
+
+body.light-mode .navbar, body.light-mode .footer {
+    background-color: #e9ecef;
+}
+
+body.light-mode .banner {
+    background-image: url('../img/light-theme-background.jpg');
+}
+
+/* Tema Escuro */
+body.dark-mode {
+    background: linear-gradient(180deg, #212529 0%, #343a40 100%);
+    color: #f8f9fa;
+}
+
+body.dark-mode .navbar, body.dark-mode .footer {
+    background-color: #343a40;
+}
+
+body.dark-mode .banner {
+    background-image: url('../img/dark-theme-background.jpg');
+}
+
+/* Estilo para os ícones de redes sociais */
+.social-icons a img[src*="youtube-logo.png"],
+.social-icons a img[src*="discord-logo.png"] {
+    width: 120px; /* Ajuste o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+    .banner {
+        padding: 90px 0;
+    }
+
+    .social-icons .icon {
+        width: 30px; /* Tamanho reduzido para telas menores */
+    }
+
+    .banner-overlay {
+        max-width: 100px;
+    }
+}

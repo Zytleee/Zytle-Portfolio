@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zytle portfolio!</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonte Pixelify Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Zytle</a>
+</nav>
+
+<!-- Banner com título e imagem -->
+<header class="banner">
+    <div class="container text-center">
+        <img src="img/banner-overlay.png" alt="Perfil" class="banner-overlay"> <!-- Imagem sobreposta -->
+        <h1 class="display-4 pixelify-sans">Zytle</h1>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/@Zytleee" target="_blank">
+                <img src="img/youtube-logo.png" alt="YouTube" class="icon">
+            </a>
+            <a href="https://discord.gg/3Thda4enj8" target="_blank">
+                <img src="img/discord-logo.png" alt="Discord" class="icon">
+            </a>
+        </div>
+        <!-- Botão de alternância de tema -->
+        <div class="theme-switcher">
+            <button id="theme-toggle" class="devmode-on">
+                <i id="theme-icon" class="fas fa-sun"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Conteúdo Principal -->
+<section class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="pixelify-sans">Edição</h2>
+            <p>Estou buscando aprender editar, mas não só vídeos, mas como esse próprio site.</p>
+            <img src="img/editor-image.png" class="img-fluid" alt="Edição">
+        </div>
+        <div class="col-md-6">
+            <h2 class="pixelify-sans">Animações:</h2>
+            <p>Espero num futuro próximo conseguir conquistar mais coisas além de conhecimento...</p>
+            <img src="img/reflexao-image.png" class="img-fluid" alt="Reflexão">
+        </div>
+        <div class="col-md-6">
+            <h2 class="pixelify-sans">Adicional:</h2>
+            <p>Procure minhas redes para saber mais sobre mim.</p>
+            <img src="img/redes-image.png" class="img-fluid" alt="Redes">
+        </div>
+    </div>
+</section>
+
+<!-- jQuery (CDN) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS (CDN) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
