@@ -141,7 +141,7 @@ body.dark-mode .banner {
 /* Estilo para os ícones de redes sociais */
 .social-icons a img[src*="youtube-logo.png"],
 .social-icons a img[src*="discord-logo.png"] {
-    width: 120px; /* Ajuste o tamanho desejado */
+    width: 110px; /* Ajuste o tamanho desejado */
     height: auto; /* Mantém a proporção da imagem */
 }
 

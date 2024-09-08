@@ -53,6 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Alterar o título ao clicar
     document.querySelector('h1').addEventListener('click', function() {
-        this.textContent = "o mais louco do mundo!";
+        this.textContent = "o mais brabo do mundo!";
     });
 });
